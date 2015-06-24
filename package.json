@@ -8,7 +8,7 @@
   },
   "keywords": [
     "browserify",
-    "browserify-transform",
+    "browserify-transform"
   ],
   "author": "Etienne Rossignon",
   "license": "MIT",
