@@ -1,0 +1,24 @@
+{
+  "name": "deassertify",
+  "version": "0.1.0",
+  "description": "browserify transform that comment out  assert line from your code",
+  "main": "deassertify.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "keywords": [
+    "browserify",
+    "browserify-transform",
+  ],
+  "author": "Etienne Rossignon",
+  "license": "MIT",
+  "dependencies": {
+    "falafel": "^1.1.0",
+    "minimist": "^1.1.1",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "concat-stream": "^1.5.0",
+    "should": "^7.0.1"
+  }
+}
