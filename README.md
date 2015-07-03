@@ -1,6 +1,6 @@
 # Deassertify
 
-  Browserify transform that comment assert statement out of your code.
+  Browserify transform to comment assert statements out of your code.
 
 
 
