@@ -17,6 +17,11 @@ then on the command line:
 
      browserify -t deassertify example.js > bundle.js
 
+You can also pass in the argument `nobundle` to prevent the assert package
+from being added to your bundle.
+
+     browserify -t [deassertify --nobundle] example.js > bundle.js
+
 or with the api:
 
 ```javascript
