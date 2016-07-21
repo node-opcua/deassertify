@@ -4,7 +4,7 @@ var through = require("through2")
 module.exports = function (file, opts) {
   if (/\.json$/.test(file)) return through()
 
-  opts = opts || {}
+  opts = opts || {nobundle: false}
 
   var data = ""
 
@@ -25,6 +25,10 @@ module.exports = function (file, opts) {
 
 function parse (data, opts) {
     return falafel(data, function (node) {
+      if (opts.nobundle && node.type == "VariableDeclaration" && node.source().match(/require\(.{1}assert/)) {
+        return node.update(node.source().split(/\n|\r/).map(function(f){ return "//-- " + f;}).join("\n"));
+      }
+
       if (node.type != "DebuggerStatement" && (node.type != "CallExpression" || !isAssert(node.callee))) {
              return;
       }
