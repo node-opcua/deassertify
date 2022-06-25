@@ -13,12 +13,12 @@
   "author": "Etienne Rossignon",
   "license": "MIT",
   "dependencies": {
-    "falafel": "^2.0.0",
-    "minimist": "^1.2.0",
-    "through2": "^2.0.1"
+    "falafel": "^2.2.5",
+    "minimist": "^1.2.6",
+    "through2": "^4.0.2"
   },
   "devDependencies": {
-    "concat-stream": "^1.5.2",
-    "should": "^11.1.1"
+    "concat-stream": "^2.0.0",
+    "should": "^13.2.3"
   }
 }
