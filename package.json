@@ -1,6 +1,6 @@
 {
   "name": "deassertify",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "browserify transform that comment out  assert line from your code",
   "main": "deassertify.js",
   "scripts": {
